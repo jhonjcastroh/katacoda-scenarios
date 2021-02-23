@@ -46,12 +46,12 @@
     }
   },
   "files": [
-    "app.js", "index.js"
+    "localhost.cfg", "multiple_hosts.cfg","windows_hosts.cfg", "playbook.yml"
   ],
   "environment": {
     "uieditorpath": "/root/example",
     "showide": true,
-    "idePort": 24000,
+    "idePort": 23000,
     "uilayout": "terminal"
   },
   "backend": {

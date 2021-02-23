@@ -45,6 +45,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "app.js", "index.js"
+  ],
   "environment": {
     "uieditorpath": "/root/example",
     "showide": true,

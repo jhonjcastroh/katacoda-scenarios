@@ -1,6 +1,6 @@
 {
-  "title": "ansible1",
-  "description": "ansible1",
+  "title": "Primer Playbook Ansible",
+  "description": "Laboratorio N° 1 de Bootcamp Ansible - TSoft",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
@@ -46,7 +46,10 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uieditorpath": "/root/example",
+    "showide": true,
+    "idePort": 23000,
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ansible"

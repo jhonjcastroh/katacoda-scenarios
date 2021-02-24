@@ -2,6 +2,8 @@ Para ejecutar un comando Ansible debemos contar con un nodo de control y otro ad
 
 `hostname`{{execute}}
 
+`[[HOST2_IP]]`{{execute}}
+
 `echo "Ejecutar en Terminal del Host 1 (nodo de control)"`{{execute HOST1}}
 
 `echo "Ejecutar en Terminal del Host 2 (nodo administrado)"`{{execute HOST2}}

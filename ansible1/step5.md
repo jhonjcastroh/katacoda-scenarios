@@ -12,6 +12,6 @@ ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
 
 [win]
-IP_HOST_WINDOWS
+HOST_WINDOWS
 
 </pre>

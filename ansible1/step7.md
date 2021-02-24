@@ -8,13 +8,11 @@ Los módulos son "las unidades de código que Ansible ejecuta. Cada módulo tien
 
 En el siguiente link encontramos el manual para los módulos https://docs.ansible.com/ansible/latest/user_guide/modules_intro.html
 
-Con el siguiente comando (ad-hoc) pordemos ejecutar el modulo `ping`:
-`ansible host2 -m ping`{{execute}}
-
 Para facilitar la búsqueda de módulo contamos con un índice en el siguiente link: https://docs.ansible.com/ansible/latest/collections/index_module.html
 
 Es importante al encontrar el módulo deseado que tengamos en cuenta lo siguiente:
-1. Los pre-requisitos para que el módulo funcione. Por lo general se trata de instalación de librerías y/o paquetes.
+1. Los pre-requisitos para que funcione el módulo. Por lo general se trata de instalación de librerías y/o paquetes.
 2. Los argumentos obligatorios o requeridos, ya que sin estos el módulo no funciona.
-3. Los valores por defecto de algunos de los argumentos.
-4. Lo argunemtos cuyo valor puede ser manejado por una variable
+3. El tipo de valor (string, integer, booleam, etc.) de los argumentos.
+4. Los valores por defecto de algunos de los argumentos.
+5. Los ejemplos del uso del módulo.

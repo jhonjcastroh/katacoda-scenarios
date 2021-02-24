@@ -7,6 +7,10 @@ En concreto, en un inventario podemos encontrar:
 * Host
 * Grupos de Host
 * Variables globales, de grupo y/o de host
+
+Ansible nos provee de un archivo de ejemplo de inventarios con algunas opciones que podemos usar:
+`cat /etc/ansible/hosts`{{execute}}
+
 ### Inventarios para servidor local
 
 Para ejecutar acciones únicamente en el nodo manager (servidor local) debemos tener un inventario que indique el localhost como único host localhost y la variable `ansible_connection`. 

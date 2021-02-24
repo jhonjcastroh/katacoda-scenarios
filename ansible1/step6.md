@@ -1,7 +1,8 @@
 ## Playbook de Ansible
 
-Los playbooks de Ansible deben ser escritos en formato Yamel (.yaml ó .yml). En los playbooks Ansible podemos encontrar los siguientes elementos:
+Los playbooks de Ansible deben ser escritos en formato Yamel (.yaml ó .yml). 
 
+En los playbooks Ansible podemos encontrar los siguientes elementos:
 * play
 * hosts
 * vars
@@ -9,6 +10,8 @@ Los playbooks de Ansible deben ser escritos en formato Yamel (.yaml ó .yml). En
   * module
 
 <pre class="file" data-filename="playbook.yml" data-target="replace">
+---
+##Esto es un comentario
 - name: NAME_PLAY
   hosts: HOST
   vars:

@@ -1,5 +1,3 @@
-## Playbook de Ansible
-
 Los playbooks de Ansible deben ser escritos en formato Yamel (.yaml ó .yml). 
 
 En los playbooks Ansible podemos encontrar los siguientes elementos:

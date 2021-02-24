@@ -1,6 +1,4 @@
-
-## Inventarios de Ansible
-
+### ¿Qué son los Inventarios de Ansible?
 Los inventarios son ficheros donde encontramos los nodos administrados por Ansible, incluyendo al localhost.
 
 En concreto, en un inventario podemos encontrar:

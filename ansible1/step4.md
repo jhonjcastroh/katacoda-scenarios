@@ -1,5 +1,3 @@
-## Inventarios con multiples hosts (Linux)
-
 Para ejecutar acciones en multiples nodos debemos tener en cuenta el metodo de autenticación para cada nodo. El metodo se establece con la variable `ansible_connection` y su valor puede ser `smart`, `ssh`, `paramiko` o  `local`. Por defecto esta variable tiene como valor `ssh`.
 
 Para evitar conflictos en la conexión a los nodos por HostKey repetidas debemos agregar la variable y el valor `ansible_ssh_common_args='-o StrictHostKeyChecking=no'`

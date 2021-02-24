@@ -1,5 +1,3 @@
-## Uso de documentación para búsqueda de Módulos de Ansible
-
 La Guía del Usuario de Ansible la podemos encontrar en https://docs.ansible.com/ansible/latest/user_guide/index.html
 
 La documentación de Ansible se usa principalmente para encontrar los módulos de las tareas que deseamos automatizar.

@@ -6,35 +6,35 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Instalacion de Ansible",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Archivo de configuración de Ansible",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Inventarios de Ansible",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Inventarios con multiples hosts (Linux)",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Inventarios con multiples hosts (Windows)",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Playbook de Ansible",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Uso de documentación para búsqueda de Módulos de Ansible",
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "Ejecución de playbook de Ansible",
         "text": "step8.md"
       }
     ],
@@ -49,6 +49,9 @@
     "localhost.cfg", "multiple_hosts.cfg","windows_hosts.cfg", "playbook.yml"
   ],
   "environment": {
+    "terminals": [
+        {"name": "Terminal 2", "target": "host02"}
+    ],
     "uieditorpath": "/root/example",
     "uilayout": "editor-terminal"
   },

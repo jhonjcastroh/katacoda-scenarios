@@ -11,4 +11,7 @@ sudo apt-add-repository --yes --update ppa:ansible/ansible
 sudo apt install -y ansible
 ```{{execute}}
 
+Puedes confirmar y verifcar la versión de Ansible instalada ejecutar:
+`ansible --version`{{execute}}
+
 Para mayor información consultar la guía de instalación https://docs.ansible.com/ansible/latest/installation_guide/index.html

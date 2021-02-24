@@ -1,5 +1,5 @@
 
-# Inventarios de Ansible
+## Inventarios de Ansible
 
 Los inventarios son ficheros donde encontramos los nodos administrados por Ansible, incluyendo al localhost.
 

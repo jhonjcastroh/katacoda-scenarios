@@ -5,10 +5,10 @@
 
 Para instalar Ansible debes ejecutar los siguientes comandos:
 ```
-sudo apt update
-sudo apt install software-properties-common
+sudo apt update -y
+sudo apt install -y software-properties-common
 sudo apt-add-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible
+sudo apt install -y ansible
 ```{{execute}}
 
 Para mayor información consultar la guía de instalación https://docs.ansible.com/ansible/latest/installation_guide/index.html

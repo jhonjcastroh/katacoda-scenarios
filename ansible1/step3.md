@@ -1,32 +1,22 @@
-## Inventarios con multiples hosts (Linux)
 
-Para ejecutar acciones en multiples nodos debemos tener en cuenta el metodo de autenticación para cada nodo. El metodo se establece con la variable `ansible_connection` y su valor puede ser `smart`, `ssh`, `paramiko` o  `local`. Por defecto esta variable tiene como valor `ssh`.
+# Inventarios de Ansible
 
-Para evitar conflictos en la conexión a los nodos por HostKey repetidas debemos agregar la variable y el valor `ansible_ssh_common_args='-o StrictHostKeyChecking=no'`
+Los inventarios son ficheros donde encontramos los nodos administrados por Ansible, incluyendo al localhost.
 
-El siguiente es un ejemplo de inventario con los diferentes tipos de opciones para agregar un host y su metodo de conexioón:
+En concreto, en un inventario podemos encontrar:
+* Host
+* Grupos de Host
+* Variables globales, de grupo y/o de host
+### Inventarios para servidor local
 
-<pre class="file" data-filename="multiple_hosts.cfg" data-target="replace">
-localhost ansible_connection=local
+Para ejecutar acciones únicamente en el nodo manager (servidor local) debemos tener un inventario que indique el localhost como único host localhost y la variable `ansible_connection`. 
 
-[servers]
-host_ip ansible_ssh_pass=HARDPASS ansible_connection=ssh
-
-[servers:children]
-manager
-workers
-
-[manager]
-MANAGER_NAME ansible_host=MANAGER_IP
-
-[workers]
-WORKER01_NAME ansible_host=WORKER01_IP
-WORKER02_NAME ansible_host=WORKER02_IP
-
+<pre class="file" data-filename="localhost.cfg" data-target="replace">
 [servers:vars]
 ansible_python_interpreter=/usr/bin/python3
-ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_user=root
-ansible_ssh_private_key_file=.ssh/key.pem
-VARIABLE_NAME=VALOR
+ansible_connection=local
+
+[servers]
+localhost ansible_connection=local
 </pre>
+

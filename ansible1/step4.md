@@ -1,17 +1,32 @@
-## Inventarios con multiples hosts (Windows)
+## Inventarios con multiples hosts (Linux)
 
-En el caso de querer administrar nodos con sistema operativo windows debemos establecer la variable `ansible_connection` con el valor `winrm`. También tenemos que tener en cuenta que los nodos o servidores Windows deben tener activo la característica de WinRM ya que sin ella ansible no puede establecer conexión hacia esos nodos.
+Para ejecutar acciones en multiples nodos debemos tener en cuenta el metodo de autenticación para cada nodo. El metodo se establece con la variable `ansible_connection` y su valor puede ser `smart`, `ssh`, `paramiko` o  `local`. Por defecto esta variable tiene como valor `ssh`.
 
-Tambien para evitar conflictos en la conexión con servidores Windows y la revisión de certificados de cada servidor con su IP se establece la variable `ansible_winrm_server_cert_validation` con el valor `false`.
+Para evitar conflictos en la conexión a los nodos por HostKey repetidas debemos agregar la variable y el valor `ansible_ssh_common_args='-o StrictHostKeyChecking=no'`
 
-<pre class="file" data-filename="windows_hosts.cfg" data-target="replace">
-[win:vars]
-ansible_user=USER
-ansible_password=PASSWOR
-ansible_connection=winrm
-ansible_winrm_server_cert_validation=ignore
+El siguiente es un ejemplo de inventario con los diferentes tipos de opciones para agregar un host y su metodo de conexioón:
 
-[win]
-IP_HOST_WINDOWS
+<pre class="file" data-filename="multiple_hosts.cfg" data-target="replace">
+localhost ansible_connection=local
 
+[servers]
+host_ip ansible_ssh_pass=HARDPASS ansible_connection=ssh
+
+[servers:children]
+manager
+workers
+
+[manager]
+MANAGER_NAME ansible_host=MANAGER_IP
+
+[workers]
+WORKER01_NAME ansible_host=WORKER01_IP
+WORKER02_NAME ansible_host=WORKER02_IP
+
+[servers:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_user=root
+ansible_ssh_private_key_file=.ssh/key.pem
+VARIABLE_NAME=VALOR
 </pre>

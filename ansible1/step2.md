@@ -1,22 +1,12 @@
+## Archivo de configuración de Ansible
 
-# Inventarios de Ansible
+La configuración de Ansible se establece en un archivo llamado ansible.cfg. Por defecto ese archivo se encuentra ubicado en `/etc/ansible/ansible.cfg`, pero tenemos varias formas de establecer un nuevo archivo de configuración tomando en cuanta las siguientes prioridades:
 
-Los inventarios son ficheros donde encontramos los nodos administrados por Ansible, incluyendo al localhost.
+* ANSIBLE_CONFIG (estableciendo la variable de entorno)
+* ansible.cfg (en el directorio actual)
+* ~/.ansible.cfg (en el directorio home)
+* /etc/ansible/ansible.cfg
 
-En concreto, en un inventario podemos encontrar:
-* Host
-* Grupos de Host
-* Variables globales, de grupo y/o de host
-### Inventarios para servidor local
+`vim /etc/ansible/ansible.cfg`{{execute}}
 
-Para ejecutar acciones únicamente en el nodo manager (servidor local) debemos tener un inventario que indique el localhost como único host localhost y la variable `ansible_connection`. 
-
-<pre class="file" data-filename="localhost.cfg" data-target="replace">
-[servers:vars]
-ansible_python_interpreter=/usr/bin/python3
-ansible_connection=local
-
-[servers]
-localhost ansible_connection=local
-</pre>
-
+Para salir, escriba `:q!`{{execute}}

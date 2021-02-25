@@ -53,7 +53,7 @@
         {"name": "Terminal 2", "target": "host02"}
     ],
     "uieditorpath": "/root/example",
-    "uilayout": "editor-terminal-ternimal"
+    "uilayout": "terminal-ternimal"
   },
   "backend": {
     "imageid": "ubuntu:2004"

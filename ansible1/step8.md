@@ -12,6 +12,7 @@ En Ansible contamos con comandos **ad-hoc** para ejecutar módulos sin necesidad
 `ansible host2 -m ping`{{execute}}
 
 Ahora te propongo unos RETOS para practicar lo aprendido en este escenario:
+
 **RETO 1:** Encontrar la documentación sobre el módulo ping.
 **RETO 2:** Modificar el inventario `multiple_hosts.cfg` para que pueda ejecutar comandos sobre el Host 2.
 **RETO 3:** Crear playbook llamado `ping.yml` para ejecutar el módulo ping en el Host 2.

@@ -45,14 +45,7 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "localhost.cfg", "multiple_hosts.cfg","windows_hosts.cfg", "playbook.yml"
-  ],
   "environment": {
-    "terminals": [
-        {"name": "Terminal 2", "target": "host02"}
-    ],
-    "uieditorpath": "/root/example",
     "uilayout": "terminal-terminal"
   },
   "backend": {

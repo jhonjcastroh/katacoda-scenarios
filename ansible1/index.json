@@ -49,6 +49,6 @@
     "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "docker-swarm"
+    "imageid": "ubuntu:1804"
   }
 }

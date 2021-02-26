@@ -49,6 +49,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "jhonjcastroh-ansible-u2004"
+    "imageid": "jhonjcastroh-multinodeexampleenv-cluster"
   }
 }

@@ -4,7 +4,7 @@ sudo apt update -y
 sudo apt install -y software-properties-common
 sudo apt-add-repository --yes --update ppa:ansible/ansible
 sudo apt install -y ansible
-```
+```{{execute}}
 
 Como Ansible ya está instalado en este ambiente puedes confirmar y verifcar la versión de Ansible instalada al ejecutar: `ansible --version`{{execute}}
 

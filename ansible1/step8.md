@@ -2,14 +2,15 @@ Para ejecutar un comando Ansible debemos contar con un nodo de control y otro ad
 
 `hostname`{{execute}}
 
-`[[HOST2_IP]]`{{execute}}
+`IP host02 [[HOST2_IP]]`
 
-`echo "Ejecutar en Terminal del Host 1 (nodo de control)"`{{execute HOST1}}
-
-`echo "Ejecutar en Terminal del Host 2 (nodo administrado)"`{{execute HOST2}}
+`ping host02`{{execute}}
+`^C`{{execute}}
+`ping localhost`{{execute}}
+`^C`{{execute}}
 
 En Ansible contamos con comandos **ad-hoc** para ejecutar módulos sin necesidad de playbooks. El siguiente comando **ad-hoc** con la bandera `-m` ejecuta el módulo `ping` que no recibe parámetros:
-`ansible host2 -m ping`{{execute}}
+`ansible localhost -m ping`{{execute}}
 
 Ahora te propongo unos RETOS para practicar lo aprendido en este escenario:
 

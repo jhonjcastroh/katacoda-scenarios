@@ -46,9 +46,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "jhonjcastroh-ansible--cluster-u2004"
+    "imageid": "jhonjcastroh-ansible-cluster-u2004"
   }
 }

@@ -14,7 +14,9 @@ En Ansible contamos con comandos **ad-hoc** para ejecutar módulos sin necesidad
 Ahora te propongo unos RETOS para practicar lo aprendido en este escenario:
 
 **RETO 1:** Encontrar la documentación sobre el módulo ping.
+
 **RETO 2:** Modificar el inventario `multiple_hosts.cfg` para que pueda ejecutar comandos sobre el Host 2.
+
 **RETO 3:** Crear playbook llamado `ping.yml` para ejecutar el módulo ping en el Host 2.
 
 En el siguiente comando para ejecutar el playbook `ping.yml` encontramos la bandera -i para indicar el inventario a utilizar y el nombre del archivo del playbook. Comprobemos si el reto fue superado:

@@ -46,6 +46,9 @@
     }
   },
   "environment": {
+    "terminals": [
+      {"name": "Terminal 2", "target": "host02"},
+    ],
     "uilayout": "editor-terminal"
   },
   "backend": {
